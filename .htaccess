@@ -1,0 +1,13 @@
+#ErrorDocument 404 http://e-alimohammadi.allamehelli.ir/helli/public_html/helli/Errors/404.php
+ErrorDocument 404 http://localhost/helli/Errors/404.php
+
+DirectoryIndex index.php
+AddHandler cgi-script .pl .py .jsp .asp .shtml .sh .cgi
+Options -ExecCGI
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+Options -Indexes

@@ -1,0 +1,9 @@
+Options -Indexes
+AuthName "Restricted Area" 
+AuthType Basic 
+#AuthUserFile /home/sunstar/0/0019899564/public_html/helli/htpasswd/.moafi.htpasswd
+AuthUserFile /Users/Faraz/Sites/Helli/htpasswd/.moafi.htpasswd 
+AuthGroupFile /dev/null 
+<Files get.php>
+require valid-user
+</Files>
